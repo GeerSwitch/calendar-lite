@@ -1,0 +1,90 @@
+/* Styles go here */
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.cal-lite {
+    border: 1px solid #ccc;
+    padding: 1px;
+    width: 230px;
+    z-index: 10;
+}
+.cal-lite header {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.cal-lite h2.month {
+    font-size: 15px;
+}
+.cal-lite span.btn-next, .cal-lite span.btn-prev {
+    display: inline-block;
+    padding: 0 15px;
+}
+.cal-lite tbody td, .cal-lite div.cl-selection {
+    font-size: 12px;
+}
+.cal-lite footer p {
+    font-size: 11px;
+    color: #787670;
+    text-align: center;
+    padding: 0 10px;
+}
+.cal-lite table {
+    width: 100%;
+}
+.cal-lite thead {
+    font-size: 10px;
+    color: #9F9C99;
+    text-align: center;
+}
+.cal-lite thead td {
+    height: auto;
+    padding: 5px 0;
+}
+.cal-lite tbody td {
+    font-weight: bold;
+    color: #1EC09F;
+    text-align: center;
+    border: 1px solid #1EC09F;
+    border-radius: 0;
+    height: 30px;
+}
+.cal-lite tbody td:empty {
+    border: none;
+}
+.cal-lite tbody td:hover:not(:empty) {
+    cursor: pointer;
+    background-color: #1EC09F;
+    border-color: white;
+    color: white;
+}
+.cal-lite tbody td.passed:empty {
+    background-color: transparent;
+}
+.cal-lite tbody td.passed, .cal-lite tbody td.passed:hover {
+    cursor: not-allowed;
+    border: none;
+    color: #787670;
+    font-weight: normal;
+    background-color: #ECEBEA;
+}
+.cal-lite tbody td.selected, .cal-lite tbody td.selected:hover {
+    background-color: #1EC09F;
+    color: white;
+    border-color: #1EC09F;
+}
+.cal-lite footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
