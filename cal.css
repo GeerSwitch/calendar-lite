@@ -11,6 +11,7 @@ button {
 }
 
 .cal-lite {
+    position: absolute;
     border: 1px solid #ccc;
     padding: 1px;
     width: 230px;

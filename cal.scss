@@ -1,0 +1,105 @@
+/* Styles go here */
+$cal-black: #312E27;
+$cal-charcoal: #47443C;
+$cal-gray: #787670;
+$cal-smoke: #9F9C99;
+$cal-mist: #D1D0CF;
+$cal-fog: #ECEBEA;
+$cal-white: #FAFAFA;
+$cal-brand: #1EC09F;
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.cal-lite {
+  position: absolute;
+  border: 1px solid #ccc;
+  padding: 1px;
+  width: 230px;
+  z-index: 10;
+
+  header {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2.month {
+    font-size: 15px;
+  }
+  span.btn-next, span.btn-prev {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  tbody td {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 11px;
+    color: $cal-gray;
+    text-align: center;
+    padding: 0 10px;
+  }
+  //
+  // Calendar table //
+  //
+  table {
+    width: 100%;
+  }
+  thead {
+    font-size: 10px;
+    color: $cal-smoke;
+    text-align: center;
+    td {
+      height: auto;
+      padding: 5px 0;
+    }
+  }
+  footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  tbody td {
+    font-weight: bold;
+    color: $cal-brand;
+    text-align: center;
+    border: 1px solid $cal-brand;
+    border-radius: 0;
+    height: 30px;
+
+    &:empty {
+      border: none;
+    }
+    &:hover:not(:empty) {
+      cursor: pointer;
+      background-color: $cal-brand;
+      border-color: white;
+      color: white;
+    }
+    &.passed:empty {
+      background-color: transparent;
+    }
+    &.passed, &.passed:hover {
+      cursor: not-allowed;
+      border: none;
+      color: $cal-gray;
+      font-weight: normal;
+      background-color: $cal-fog;
+    }
+    &.selected, &.selected:hover {
+      background-color: $cal-brand;
+      color: white;
+      border-color: $cal-brand;
+    }
+  }
+}
