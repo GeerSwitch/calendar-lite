@@ -327,18 +327,3 @@
   }
 
 })(jQuery, document);
-
-$(function () {
-  var button = $('button');
-  var cal = $('#cal').calendarLite({
-    footerHTML: '<p>Visit requests must be made at least 24 hours in advance.</p> '
-  });
-
-  cal.on('select', function (e, data) {
-    console.log('data', data)
-  });
-
-  button.on('click', function () {
-    cal.toggle();
-  })
-});
