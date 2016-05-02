@@ -1,0 +1,24 @@
+{
+  "name": "calendar-lite",
+  "version": "0.0.1",
+  "description": "Very lightweight calendar jQuery widget.",
+  "main": "src/calendar-lite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeerSwitch/calendar-lite.git"
+  },
+  "keywords": [
+    "calendar",
+    "jquery",
+    "light"
+  ],
+  "author": "Steve Geer <stevenegeer@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeerSwitch/calendar-lite/issues"
+  },
+  "homepage": "https://github.com/GeerSwitch/calendar-lite#readme"
+}
